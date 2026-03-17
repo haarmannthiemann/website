@@ -41,10 +41,20 @@
     .profile img {
       width: 100px;
       height: 100px;
+      max-width: 100%;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid #d8c7b1;
       box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    @media (max-width: 600px) {
+      .profile {
+        flex-direction: column;
+      }
+      .profile img {
+        width: 80px;
+        height: 80px;
+      }
     }
     h1 {
       margin: 0;
