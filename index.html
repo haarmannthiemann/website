@@ -10,19 +10,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet">
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
-  />
-    <style type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+  <style type="text/css">
     html,
     body {
       margin: 0;
       padding: 0;
       min-height: 100%;
-      background: #f4ecde;
-      /* cosy beige */
-      color: #5b4a38;
+      background: #f7f2e9;
+      color: #82746e;
       font-family: "DM Sans", sans-serif;
     }
 
@@ -44,56 +40,37 @@
       box-shadow: none;
     }
 
-    .profile {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid #d8c7b1;
-      margin-bottom: 1.2rem;
-    }
 
-    .hero {
+    .contact {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
       gap: 1rem;
       margin-bottom: 1.5rem;
+      margin-top: 10rem;
     }
 
-    .hero-content {
-      max-width: 650px;
-      width: 100%;
-      text-align: center;
-    }
-
-    .hero-content h1 {
-      margin-top: 0;
-      margin-bottom: 0.25rem;
-      border-bottom: 1px solid #d8c7b1;
-      padding-bottom: 0.3rem;
-      padding-left: 0.1rem;
-      padding-right: 0.1rem;
-    }
-
-    .hero-avatar {
-      width: 160px;
-      height: 160px;
+    .contact-avatar {
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       object-fit: cover;
-      border: 1px solid #d8c7b1;
+      border: 1px solid #e7dcce;
       flex-shrink: 0;
+    }
+
+    .contact-info {
+      text-align: left;
+
     }
 
     .projects {
       width: 100%;
-      max-width: 840px;
       border: none;
       border-radius: 0;
       padding: 0.8rem 0.2rem 0.2rem;
-      background: #f8f1e6;
+      background: #f7f2e9;
       text-align: left;
       box-shadow: none;
       margin: 0 auto;
@@ -107,9 +84,10 @@
 
     .projects h3 {
       margin: 0;
-      font-size: 1rem;
+      font-size: 1.5rem;
       margin-bottom: 0.6rem;
-      color: #5b4a38;
+      color: #82746e;
+      font-weight: 100;
     }
 
     .project-grid {
@@ -126,7 +104,9 @@
       min-height: 160px;
       overflow: hidden;
       border-radius: 0;
-      background: #eee;
+      background: #f7f2e9;
+      border: none;
+      box-shadow: none;
       cursor: pointer;
       transition: transform 0.2s ease;
     }
@@ -175,54 +155,33 @@
       }
     }
 
-    .hero-content {
-      max-width: 520px;
-      text-align: left;
-    }
 
-    .hero-content h1 {
-      margin-top: 0;
-      margin-bottom: 0.25rem;
-    }
-
-    .profile img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 1px solid #d8c7b1;
+    h1,
+    h2,
+    h3 {
+      color: #82746e;
     }
 
     h1 {
       margin: 0;
-      font-size: 1.8rem;
+      font-size: 2rem;
+      font-weight: 100;
       text-transform: none;
-      font-variant: small-caps;
+      font-variant: normal;
       letter-spacing: 0.05em;
     }
+
+    h2 {
+      margin: 0.2rem 0 0.8rem;
+      font-size: 1.1rem;
+      font-weight: 100;
+    }
+
 
     p {
       margin: 1rem 0;
     }
 
-    .kontakt {
-      margin-top: 1.5rem;
-      text-align: left;
-      display: inline-block;
-      width: 100%;
-      max-width: 500px;
-    }
-
-    .kontakt h2 {
-      margin: 0.2rem 0 0.8rem;
-      font-size: 1.1rem;
-    }
-
-    .kontakt p {
-      margin: 0;
-      line-height: 1.6;
-      font-size: 1.05rem;
-    }
 
     .impressum {
       margin-top: 3rem;
@@ -231,7 +190,7 @@
       font-size: 0.7rem;
       color: #7a6a58;
       text-align: center;
-      opacity: 0.85;
+      opacity: 0.75;
     }
 
     .contact-item {
@@ -263,99 +222,198 @@
 
 <body>
   <main>
-    <div class="hero">
-      <div class="hero-content">
-        <h1>Svenja Haarmann-Thiemann</h1>
-        <p>Tischlerin</p>
-      </div>
-      <div class="projects">
-        <h3>Projekte</h3>
-        <div class="project-grid">
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/0BD0F090-9F0C-44C7-B2BB-33EA73CB82DC.jpg" data-lightbox="projects" data-title="Projekt 1">
-            <img src="Website%20Projekte/thumbs/0BD0F090-9F0C-44C7-B2BB-33EA73CB82DC.jpg" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/13062F5C-D03C-47BC-8604-7BC8E66821F2.jpg" data-lightbox="projects" data-title="Projekt 2">
-            <img src="Website%20Projekte/thumbs/13062F5C-D03C-47BC-8604-7BC8E66821F2.jpg" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/25F9F15E-E7CC-4114-BE5B-133B01EFFC00.jpg" data-lightbox="projects" data-title="Projekt 3">
-            <img src="Website%20Projekte/thumbs/25F9F15E-E7CC-4114-BE5B-133B01EFFC00.jpg" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/43CD181C-361B-42AA-A91F-D9D8A70D0CA1.jpg" data-lightbox="projects" data-title="Projekt 4">
-            <img src="Website%20Projekte/thumbs/43CD181C-361B-42AA-A91F-D9D8A70D0CA1.jpg" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/53BECC06-B76E-430D-8CA3-844D2058DDF4.jpg" data-lightbox="projects" data-title="Projekt 5">
-            <img src="Website%20Projekte/thumbs/53BECC06-B76E-430D-8CA3-844D2058DDF4.jpg" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/6E7FB4B3-9A22-4995-A003-C1FE65100902.jpg" data-lightbox="projects" data-title="Projekt 6">
-            <img src="Website%20Projekte/thumbs/6E7FB4B3-9A22-4995-A003-C1FE65100902.jpg" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/DSC00257.JPG" data-lightbox="projects" data-title="Projekt 7">
-            <img src="Website%20Projekte/thumbs/DSC00257.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/DSC00266.JPG" data-lightbox="projects" data-title="Projekt 8">
-            <img src="Website%20Projekte/thumbs/DSC00266.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/DSC00279.JPG" data-lightbox="projects" data-title="Projekt 9">
-            <img src="Website%20Projekte/thumbs/DSC00279.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/DSC00283.JPG" data-lightbox="projects" data-title="Projekt 10">
-            <img src="Website%20Projekte/thumbs/DSC00283.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/DSC00350.JPG" data-lightbox="projects" data-title="Projekt 11">
-            <img src="Website%20Projekte/thumbs/DSC00350.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/DSC00357.JPG" data-lightbox="projects" data-title="Projekt 12">
-            <img src="Website%20Projekte/thumbs/DSC00357.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/DSC00537.JPG" data-lightbox="projects" data-title="Projekt 13">
-            <img src="Website%20Projekte/thumbs/DSC00537.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/DSC00548.JPG" data-lightbox="projects" data-title="Projekt 14">
-            <img src="Website%20Projekte/thumbs/DSC00548.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/DSC00793.JPG" data-lightbox="projects" data-title="Projekt 15">
-            <img src="Website%20Projekte/thumbs/DSC00793.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/DSC00818.JPG" data-lightbox="projects" data-title="Projekt 16">
-            <img src="Website%20Projekte/thumbs/DSC00818.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/E79E16EA-DDA4-4C24-BB38-3F6142AAC102.jpg" data-lightbox="projects" data-title="Projekt 17">
-            <img src="Website%20Projekte/thumbs/E79E16EA-DDA4-4C24-BB38-3F6142AAC102.jpg" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/IMG_1135.JPG" data-lightbox="projects" data-title="Projekt 18">
-            <img src="Website%20Projekte/thumbs/IMG_1135.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/IMG_1136.JPG" data-lightbox="projects" data-title="Projekt 19">
-            <img src="Website%20Projekte/thumbs/IMG_1136.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/IMG_1139.JPG" data-lightbox="projects" data-title="Projekt 20">
-            <img src="Website%20Projekte/thumbs/IMG_1139.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/IMG_1145.JPG" data-lightbox="projects" data-title="Projekt 21">
-            <img src="Website%20Projekte/thumbs/IMG_1145.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/IMG_1147.JPG" data-lightbox="projects" data-title="Projekt 22">
-            <img src="Website%20Projekte/thumbs/IMG_1147.JPG" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/IMG_1241.jpeg" data-lightbox="projects" data-title="Projekt 23">
-            <img src="Website%20Projekte/thumbs/IMG_1241.jpeg" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/IMG_3515.jpeg" data-lightbox="projects" data-title="Projekt 24">
-            <img src="Website%20Projekte/thumbs/IMG_3515.jpeg" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/IMG_9168.jpeg" data-lightbox="projects" data-title="Projekt 25">
-            <img src="Website%20Projekte/thumbs/IMG_9168.jpeg" />
-          </a>
-          <a data-fancybox="projects" class="tile" href="Website%20Projekte/IMG_9176.jpeg" data-lightbox="projects" data-title="Projekt 26">
-            <img src="Website%20Projekte/thumbs/IMG_9176.jpeg" />
-          </a>
-        </div>
+    <h1>svenja haarmann-thiemann</h1>
+    <div class="projects">
+      <h3>portfolio</h3>
+      <div class="project-grid">
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/HochbettNah.jpg" data-lightbox="projects"
+        data-title="Projekt 6">
+        <img src="Website%20Projekte/thumbs/HochbettNah.jpg" />
+      </a>
+      <a data-fancybox="projects" class="tile" href="Website%20Projekte/CouchtischRüsterUnterseite.JPG"
+      data-lightbox="projects" data-title="Projekt 8">
+      <img src="Website%20Projekte/thumbs/CouchtischRüsterUnterseite.JPG" />
+    </a>
+    <a data-fancybox="projects" class="tile" href="Website%20Projekte/CouchtischRüsterKreise.JPG"
+    data-lightbox="projects" data-title="Projekt 7">
+    <img src="Website%20Projekte/thumbs/CouchtischRüsterKreise.JPG" />
+  </a>
+  <a data-fancybox="projects" class="tile" href="Website%20Projekte/BücherregalNah.jpeg" data-lightbox="projects"
+  data-title="Projekt 25">
+  <img src="Website%20Projekte/thumbs/BücherregalNah.jpeg" />
+</a>
+<a data-fancybox="projects" class="tile" href="./Website Projekte/resized/CouchtischNussbaumMadeleine1.jpg"
+  data-lightbox="projects" data-title="CouchtischNussbaumMadeleine1">
+  <img src="./Website Projekte/thumbs/CouchtischNussbaumMadeleine1.jpg" alt="CouchtischNussbaumMadeleine1">
+</a>
+<a data-fancybox="projects" class="tile" href="./Website Projekte/resized/CouchtischNussbaumMadeleine3.jpg"
+  data-lightbox="projects" data-title="CouchtischNussbaumMadeleine3">
+  <img src="./Website Projekte/thumbs/CouchtischNussbaumMadeleine3.jpg" alt="CouchtischNussbaumMadeleine3">
+</a>
+<a data-fancybox="projects" class="tile"
+  href="./Website Projekte/resized/LENB-11.22-Svenja-Haarmann-Thiemann-Bed-Full01-temporary kopiëren.jpg"
+  data-lightbox="projects" data-title="LENB-11.22-Svenja-Haarmann-Thiemann-Bed-Full01-temporary kopiëren">
+  <img src="./Website Projekte/thumbs/LENB-11.22-Svenja-Haarmann-Thiemann-Bed-Full01-temporary kopiëren.jpg"
+    alt="LENB-11.22-Svenja-Haarmann-Thiemann-Bed-Full01-temporary kopiëren">
+</a>
+<a data-fancybox="projects" class="tile"
+  href="./Website Projekte/resized/LENB-11.22-Svenja-Haarmann-Thiemann-Bed-Detail01 kopiëren.jpg"
+  data-lightbox="projects" data-title="LENB-11.22-Svenja-Haarmann-Thiemann-Bed-Detail01 kopiëren">
+  <img src="./Website Projekte/thumbs/LENB-11.22-Svenja-Haarmann-Thiemann-Bed-Detail01 kopiëren.jpg"
+    alt="LENB-11.22-Svenja-Haarmann-Thiemann-Bed-Detail01 kopiëren">
+</a>
+<a data-fancybox="projects" class="tile" href="./Website Projekte/resized/LEN2.jpg" data-lightbox="projects"
+  data-title="LEN2">
+  <img src="./Website Projekte/thumbs/LEN2.jpg" alt="LEN2">
+</a>
+<a data-fancybox="projects" class="tile" href="./Website Projekte/resized/LEN3.jpg" data-lightbox="projects"
+  data-title="LEN3">
+  <img src="./Website Projekte/thumbs/LEN3.jpg" alt="LEN3">
+</a>
+<a data-fancybox="projects" class="tile" href="./Website Projekte/resized/LEN .jpg" data-lightbox="projects"
+  data-title="LEN ">
+  <img src="./Website Projekte/thumbs/LEN .jpg" alt="LEN ">
+</a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/Bücherregal.jpeg" data-lightbox="projects"
+          data-title="Projekt 26">
+          <img src="Website%20Projekte/thumbs/Bücherregal.jpeg" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/CouchtischNussbaum.JPG"
+          data-lightbox="projects" data-title="Projekt 18">
+          <img src="Website%20Projekte/thumbs/CouchtischNussbaum.JPG" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/CouchtischNussbaumFuß.JPG"
+          data-lightbox="projects" data-title="Projekt 19">
+          <img src="Website%20Projekte/thumbs/CouchtischNussbaumFuß.JPG" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/CouchtischNussbaumVase.JPG"
+          data-lightbox="projects" data-title="Projekt 20">
+          <img src="Website%20Projekte/thumbs/CouchtischNussbaumVase.JPG" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/CouchtischNussbaumKerze.JPG"
+          data-lightbox="projects" data-title="Projekt 21">
+          <img src="Website%20Projekte/thumbs/CouchtischNussbaumKerze.JPG" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/CouchtischNussbaumDraufsicht.JPG"
+          data-lightbox="projects" data-title="Projekt 22">
+          <img src="Website%20Projekte/thumbs/CouchtischNussbaumDraufsicht.JPG" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/eichentisch.jpg" data-lightbox="projects"
+          data-title="Projekt 4">
+          <img src="Website%20Projekte/thumbs/eichentisch.jpg" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/Kochlöffel.jpg" data-lightbox="projects"
+          data-title="Projekt 17">
+          <img src="Website%20Projekte/thumbs/Kochlöffel.jpg" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/MörserNah.jpg" data-lightbox="projects"
+          data-title="Projekt 2">
+          <img src="Website%20Projekte/thumbs/MörserNah.jpg" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/Mörser mit Tee.jpg" data-lightbox="projects"
+          data-title="Projekt 1">
+          <img src="Website%20Projekte/thumbs/Mörser mit Tee.jpg" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="./Website Projekte/resized/SchneidebretterEsche.jpg"
+          data-lightbox="projects" data-title="SchneidebretterEsche">
+          <img src="./Website Projekte/thumbs/SchneidebretterEsche.jpg" alt="SchneidebretterEsche">
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/SchneidebrettNussbaum.JPG"
+          data-lightbox="projects" data-title="Projekt 15">
+          <img src="Website%20Projekte/thumbs/SchneidebrettNussbaum.JPG" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/SchneidebrettEiche.jpg"
+          data-lightbox="projects" data-title="Projekt 3">
+          <img src="Website%20Projekte/thumbs/SchneidebrettEiche.jpg" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="./Website Projekte/resized/SalatBesteck.jpg"
+          data-lightbox="projects" data-title="SalatBesteck">
+          <img src="./Website Projekte/thumbs/SalatBesteck.jpg" alt="SalatBesteck">
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/Klemmbrett.jpg" data-lightbox="projects"
+          data-title="Projekt 5">
+          <img src="Website%20Projekte/thumbs/Klemmbrett.jpg" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="./Website Projekte/resized/Mappe.jpg" data-lightbox="projects"
+          data-title="Mappe">
+          <img src="./Website Projekte/thumbs/Mappe.jpg" alt="Mappe">
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/SofaEsche.jpeg" data-lightbox="projects"
+          data-title="Projekt 24">
+          <img src="Website%20Projekte/thumbs/SofaEsche.jpeg" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/BettEschePerson2.JPG" data-lightbox="projects"
+          data-title="Projekt 10">
+          <img src="Website%20Projekte/thumbs/BettEschePerson2.JPG" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/BettEscheStollen.JPG" data-lightbox="projects"
+          data-title="Projekt 11">
+          <img src="Website%20Projekte/thumbs/BettEscheStollen.JPG" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="./Website Projekte/resized/BettEscheZinkung(1).jpg"
+          data-lightbox="projects" data-title="BettEscheZinkung(1)">
+          <img src="./Website Projekte/thumbs/BettEscheZinkung(1).jpg" alt="BettEscheZinkung(1)">
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/Tellerregal.JPG" data-lightbox="projects"
+          data-title="Projekt 12">
+          <img src="Website%20Projekte/thumbs/Tellerregal.JPG" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="./Website Projekte/resized/GitarrenStand.jpg"
+          data-lightbox="projects" data-title="GitarrenStand">
+          <img src="./Website Projekte/thumbs/GitarrenStand.jpg" alt="GitarrenStand">
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/CelloStand.JPG" data-lightbox="projects"
+          data-title="Projekt 14">
+          <img src="Website%20Projekte/thumbs/CelloStand.JPG" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="./Website Projekte/resized/CelloStand1.jpg"
+          data-lightbox="projects" data-title="CelloStand1">
+          <img src="./Website Projekte/thumbs/CelloStand1.jpg" alt="CelloStand1">
+        </a>
+        <a data-fancybox="projects" class="tile"
+          href="./Website Projekte/resized/Svenja Haarmann-Thiemann_Eichenkisten.jpg" data-lightbox="projects"
+          data-title="Svenja Haarmann-Thiemann_Eichenkisten">
+          <img src="./Website Projekte/thumbs/Svenja Haarmann-Thiemann_Eichenkisten.jpg"
+            alt="Svenja Haarmann-Thiemann_Eichenkisten">
+        </a>
+        <a data-fancybox="projects" class="tile" href="./Website Projekte/resized/BipiBench.jpg"
+          data-lightbox="projects" data-title="BipiBench">
+          <img src="./Website Projekte/thumbs/BipiBench.jpg" alt="BipiBench">
+        </a>
+        <a data-fancybox="projects" class="tile" href="./Website Projekte/resized/IMG_0230.jpg" data-lightbox="projects"
+          data-title="IMG_0230">
+          <img src="./Website Projekte/thumbs/IMG_0230.jpg" alt="IMG_0230">
+        </a>
+        <a data-fancybox="projects" class="tile" href="Website%20Projekte/HexaLampe.JPG" data-lightbox="projects"
+          data-title="Projekt 16">
+          <img src="Website%20Projekte/thumbs/HexaLampe.JPG" />
+        </a>
+        <a data-fancybox="projects" class="tile" href="./Website Projekte/resized/Gips1.jpg" data-lightbox="projects"
+          data-title="Gips1">
+          <img src="./Website Projekte/thumbs/Gips1.jpg" alt="Gips1">
+        </a>
+        <a data-fancybox="projects" class="tile" href="./Website Projekte/resized/Gips3.jpg" data-lightbox="projects"
+          data-title="Gips3">
+          <img src="./Website Projekte/thumbs/Gips3.jpg" alt="Gips3">
+        </a>
+        <a data-fancybox="projects" class="tile" href="./Website Projekte/resized/Gips4.jpg" data-lightbox="projects"
+          data-title="Gips4">
+          <img src="./Website Projekte/thumbs/Gips4.jpg" alt="Gips4">
+        </a>
+        <a data-fancybox="projects" class="tile" href="./Website Projekte/resized/Gips5.jpg" data-lightbox="projects"
+          data-title="Gips5">
+          <img src="./Website Projekte/thumbs/Gips5.jpg" alt="Gips5">
+        </a>
+        <a data-fancybox="projects" class="tile" href="./Website Projekte/resized/Gips6.jpg" data-lightbox="projects"
+          data-title="Gips6">
+          <img src="./Website Projekte/thumbs/Gips6.jpg" alt="Gips6">
+        </a>
       </div>
     </div>
 
-    <section class="kontakt">
-      <h2>Kontakt</h2>
-      <p>
+    <div class="contact">
+      <img class="contact-avatar" src="avatar1.jpeg">
+      <p class="contact-info">
         <a href="https://www.instagram.com/svenja_haarmann_thiemann" target="_blank" rel="noopener noreferrer"
           class="contact-item" aria-label="Instagram Profil von svenja_haarmann_thiemann">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
@@ -367,7 +425,8 @@
         </a><br>
         <a href="tel:+4915738280202" class="contact-item" aria-label="Anrufen">
           <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12.93.33 1.84.61 2.72a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.88.28 1.79.49 2.72.61A2 2 0 0 1 22 16.92z" />
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12.93.33 1.84.61 2.72a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.88.28 1.79.49 2.72.61A2 2 0 0 1 22 16.92z" />
           </svg>
           <span>+49 15738280202</span>
         </a><br>
@@ -379,9 +438,9 @@
           <span>svenja@haarmannthiemann.de</span>
         </a>
       </p>
-    </section>
+    </div>
     <section class="impressum">
-      <p>Impressum: Svenja Haarmann-Thiemann, Baumschulenstr. 7, 12437 Berlin, Deutschland</p>
+      <p>Impressum: Svenja Haarmann-Thiemann, Wilhelminenhofstr. 92, 12459 Berlin, Deutschland</p>
     </section>
   </main>
 
