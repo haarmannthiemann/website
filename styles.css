@@ -136,6 +136,18 @@ body.page-home .projects h3 {
     color: var(--accent)
 }
 
+body.page-art .panel {
+    text-align: left
+}
+
+body.page-art .art-video-title {
+    margin: 0 0 .6rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--accent);
+    text-align: left
+}
+
 body.page-home .project-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -299,7 +311,7 @@ body.page-home .project-grid a.tile img {
     border: none;
     padding: 0 0 1rem;
     margin-bottom: 0;
-    text-align: center
+    text-align: left
 }
 
 .gallery-grid {
